@@ -8,6 +8,12 @@ function App() {
           AYing's Website Demo
         </p>
       </header>
+      <p>
+        创建 DEMO | create a demo
+      </p>
+      <p>
+        先创建一个静态网站 | static website first
+      </p>
     </div>
   );
 }
