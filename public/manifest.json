@@ -55,7 +55,7 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
