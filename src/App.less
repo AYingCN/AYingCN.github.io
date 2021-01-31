@@ -1,0 +1,79 @@
+@import "color.less";
+
+.index {
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+
+  .contents {
+    margin-top: 7vh;
+    padding-top: 20px;
+    display: flex;
+
+    @media (min-width: 200px) {
+      .me {
+        width: 46vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .me-avatar {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+
+        .me-info {
+          color: @fg-light-l;
+          font-weight: bold;
+          font-size: 16px;
+          text-shadow: 1px 1px 2px @fg-light-s;
+        }
+      }
+  
+      .directory {
+        width: 46vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .directory-a {
+          display: block;
+          color: @fg-light-l;
+          font-weight: bold;
+          font-size: 20px;
+          margin: 17px 0;
+        }
+
+        .directory-a:hover {
+          color: @fg-light-s;
+        }
+      }
+    }
+  
+    @media (min-width: 320px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

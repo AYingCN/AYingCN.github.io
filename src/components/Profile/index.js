@@ -1,0 +1,8 @@
+// used for part FRIENDS
+import React from 'react'
+
+export default function Profile() {
+    return (
+        <div></div>
+    )
+}
