@@ -1,0 +1,49 @@
+@import "../../color.less";
+
+.part {
+    width: 90vw;
+    min-height: 20px;
+    border: 1px solid @fg-light-l;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 2px @fg-light-s;
+    font-size: 14px;
+    color: @fg-light-s;
+    display: flex;
+    padding: 0.5rem;
+    margin-top: 30px;
+
+    .desc {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: start;
+        border-right: 1px solid @fg-light-l;
+        padding-right: 0.5rem;
+    }
+
+    .pics {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+
+        .img-container {
+            display: inline-block;
+            flex-grow: 1;
+            flex-shrink: 1;
+            height: 100px;
+            padding: 5px;
+
+            img {
+                height: 100%;
+                border-radius: 2px;
+                border: 0.5px solid @fg-light-s;
+            }
+        }
+    }
+
+    .pics::after {
+        content: '';
+        flex-grow: 999999;
+    }
+}
