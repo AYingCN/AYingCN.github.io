@@ -1,0 +1,38 @@
+.top-fixed {
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  width: 100vw;
+  border-bottom: 1px solid #e8547a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef8fa;
+  z-index: 100;
+  color: #3f3f3f;
+}
+.top-fixed .top-logo {
+  height: 80%;
+  min-width: 30px;
+  max-width: 30%;
+  margin-left: 10px;
+}
+.top-fixed .top-text {
+  height: 100%;
+  min-width: 30px;
+  font-size: 14px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+@media (min-width: 800px) {
+  .top-fixed .top-text {
+    max-width: 30%;
+  }
+}
+@media (min-width: 320px) {
+  .top-fixed .top-text {
+    max-width: 70%;
+  }
+}

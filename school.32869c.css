@@ -1,0 +1,118 @@
+.part {
+  width: 90vw;
+  min-height: 20px;
+  border: 1px solid #e8547a;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 2px #3f3f3f;
+  font-size: 14px;
+  color: #3f3f3f;
+  display: flex;
+  padding: 0.5rem;
+  margin-top: 30px;
+}
+.part .desc {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: start;
+  border-right: 1px solid #e8547a;
+  padding-right: 0.5rem;
+}
+.part .pics {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+.part .pics .img-container {
+  display: inline-block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100px;
+  padding: 5px;
+}
+.part .pics .img-container img {
+  height: 100%;
+  border-radius: 2px;
+  border: 0.5px solid #3f3f3f;
+}
+.part .pics::after {
+  content: '';
+  flex-grow: 999999;
+}
+.top-fixed {
+  position: fixed;
+  top: 0;
+  height: 7vh;
+  width: 100vw;
+  border-bottom: 1px solid #e8547a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef8fa;
+  z-index: 100;
+  color: #3f3f3f;
+}
+.top-fixed .top-logo {
+  height: 80%;
+  min-width: 30px;
+  max-width: 30%;
+  margin-left: 10px;
+}
+.top-fixed .top-text {
+  height: 100%;
+  min-width: 30px;
+  font-size: 14px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+@media (min-width: 800px) {
+  .top-fixed .top-text {
+    max-width: 30%;
+  }
+}
+@media (min-width: 320px) {
+  .top-fixed .top-text {
+    max-width: 70%;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fef8fa;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+.index {
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.index .contents {
+  margin-top: 7vh;
+  display: flex;
+}
+@media (min-width: 320px) {
+  .index .contents {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
