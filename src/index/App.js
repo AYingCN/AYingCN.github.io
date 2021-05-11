@@ -19,13 +19,11 @@ class App extends Component {
               <p>Student & FE Developer</p>
               <p>Hunan China</p>
               <p>SCU</p>
-              <p>ByteDance</p>
               <p>《盛夏的果实》—— 莫文蔚</p>
             </div>
           </div>
           <div className="directory">
             <a href="school.html" className="directory-a" title="学习经历">school</a>
-            <a href="career.html" className="directory-a" title="职业生涯">career</a>
             <a href="coffee.html" className="directory-a" title="咖啡相关">coffee</a>
             <a href="ukulele.html" className="directory-a" title="尤克里里相关">ukulele</a>
             <a href="friends.html" className="directory-a" title="我的朋友们">friends</a>
